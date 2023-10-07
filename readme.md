@@ -2,7 +2,7 @@ API
 
 ######## USERS ########
 
-Get ALL:  Get URL/V1/user /n
+Get ALL:  Get URL/V1/user 
 Get ONE:  Get URL/V1/user/:id
 Create: Post URL/V1/user/signup
 Login: Post URL/V1/user/login
