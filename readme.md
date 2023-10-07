@@ -11,7 +11,8 @@ Update: Put URL/V1/user/:id
 Delete: Delete URL/V1/user/:id  
 Get Houses: Get URL/V1/user/:id/houses . obtener las casas q tiene validadas
 
-######## House ########
+######## House ########  
+
 Get ALL:  Get URL/V1/house  
 Get ONE:  Get URL/V1/house/:id  
 Create: Post URL/V1/house  
@@ -21,16 +22,18 @@ Get Images: Get URL/V1/house/:id/images . obtener nombre de archivos de  las ima
 Get Ratings: Get URL/V1/house/:id/ratings . obtener los ratings de esa casa
 
 ######## RentHouse ########  
+
 Get ALL:  Get URL/V1/renthouse  
 Get ONE:  Get URL/V1/renthouse/:id  
 Create: Post URL/V1/renthouse  
 Update: Put URL/V1/renthouse/:id  
 Delete: Delete URL/V1/renthouse/:id
 
-######## Rating ########
-Get ALL:  Get URL/V1/rating
-Get ONE:  Get URL/V1/rating/:id
-Create: Post URL/V1/rating
-Update: Put URL/V1/rating/:id
+######## Rating ########  
+
+Get ALL:  Get URL/V1/rating  
+Get ONE:  Get URL/V1/rating/:id  
+Create: Post URL/V1/rating  
+Update: Put URL/V1/rating/:id  
 Delete: Delete URL/V1/rating/:id
 
