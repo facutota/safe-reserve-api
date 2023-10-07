@@ -20,7 +20,7 @@ Delete: Delete URL/V1/house/:id
 Get Images: Get URL/V1/house/:id/images . obtener nombre de archivos de  las imagenes o videos de la casas  
 Get Ratings: Get URL/V1/house/:id/ratings . obtener los ratings de esa casa
 
-######## RentHouse ########
+######## RentHouse ########  
 Get ALL:  Get URL/V1/renthouse  
 Get ONE:  Get URL/V1/renthouse/:id  
 Create: Post URL/V1/renthouse  
