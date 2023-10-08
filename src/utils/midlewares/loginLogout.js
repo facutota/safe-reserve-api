@@ -8,7 +8,7 @@ const login = async function (req, res) {
   const pass = req.body["Password_User"];
   console.log(email);
 
-  query_ = 'SELECT * FROM user WHERE Email_User=' + mysql.escape(email);
+  query_ = 'SELECT * FROM User WHERE Email_User=' + mysql.escape(email);
 
   try {
     const [results, fields] = await mysqlConnection.query(query_);
