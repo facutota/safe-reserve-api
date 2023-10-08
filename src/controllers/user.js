@@ -91,7 +91,7 @@ const createUser = async function (req, res) {
       console.log("Data good" + results);
       res.status(200).json({
         estado: true,
-        data: results,
+        data: results[0],
       });
     }
   } catch (error) {
