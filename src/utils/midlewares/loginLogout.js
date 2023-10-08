@@ -19,7 +19,7 @@ const login = async function (req, res) {
     } else {
       const data = results[0];
       // Llama a la función de verificación de contraseñas
-      const isPasswordValid = await verifyPassword(pass, data.Contrasenia_Usuario);
+      const isPasswordValid = await verifyPassword(pass, data.Password_User);
 
       if (isPasswordValid) {
         console.log('Login Exitoso');
