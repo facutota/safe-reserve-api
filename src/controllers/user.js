@@ -84,6 +84,8 @@ const createUser = async function (req, res) {
     console.log(hashPs);
 
     const results = await pool.query(query_);
+    const data = results[0];
+
     if (results.length === 0) {
       console.log("Error al obtener data o TABLA VACIA");
       res.status(300).json({ estado: true, data: [] });
@@ -91,7 +93,7 @@ const createUser = async function (req, res) {
       console.log("Data good" + results);
       res.status(200).json({
         estado: true,
-        data: results[0],
+        data: data,
       });
     }
   } catch (error) {
@@ -143,4 +145,25 @@ const getHouses = async function (req, res) {
   }
 };
 
-module.exports = { getUser, getUsers, createUser, updateUser, deleteUser, getHouses };
+const getRentHouses = async function (req, res) {
+  const id = req.params.id;
+  query_ = `SELECT H.* FROM RentHouse H JOIN User U ON H.UserId_RentHouse_Fk = U.ID_User_Pk WHERE ID_User_Pk=${mysql.escape(id)}`;
+
+  try {
+      const [results, fields] = await pool.query(query_);
+      if (results.length == 0) {
+          console.log("Error al obtener data o TABLA VACIA");
+          res.status(300).json({ estado: true, data: [] });
+      } else {
+          console.log("Data good");
+          res.status(200).json({
+              estado: true,
+              data: results,
+          });
+      }
+  } catch (error) {
+      res.status(409).send(String(error));
+  }
+};
+
+module.exports = { getUser, getUsers, createUser, updateUser, deleteUser, getHouses, getRentHouses };

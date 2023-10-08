@@ -10,6 +10,7 @@ LogOut: Get URL/V1/user/logout
 Update: Put URL/V1/user/:id
 Delete: Delete URL/V1/user/:id  
 Get Houses: Get URL/V1/user/:id/houses . obtener las casas q tiene validadas
+Get RentHouses: Get URL/V1/user/:id/renthouses . obtener las casas q alquilo
 
 ######## House ########  
 
